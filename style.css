@@ -1,0 +1,178 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*FIN RESET CSS*/
+/*CALIBRAGE PX/REM*/
+html {
+    font-size: 62.5%;
+}
+/*FIN CALIBRAGE PX/REM*/
+
+
+
+/* Attributions couleurs aux tiles*/
+.color-yellow {
+    background-color: #ff9e00;
+}
+
+.color-blue {
+    background-color: #1e8bc4;
+}
+
+.color-green{
+    background-color: #35bc7a;
+}
+
+.color-orange {
+    background-color: #f86925;
+}
+
+.color-red {
+    background-color: #f15a49;
+}
+/* Fin attribution couleurs au tiles*/
+
+body {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    align-items: flex-start;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tile {
+    width: 20rem;
+    height: 20rem;
+    flex-grow: 1;
+    display: flex;
+}
+
+#name {
+    width: 40rem;
+    height: 20rem;
+    flex-grow: 1;
+}
+
+#picture {
+    width: 40rem;
+    height: 60rem
+}
+
+img[alt^="icone"] {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    filter: invert(100%);
+}
+
+img[alt="icone-small"] {
+    display: block;
+    width: 1.5rem;
+    height: auto;
+    text-align: center;
+}
+
+#links {
+    display: flex;
+    overflow: hidden;
+}
+
+.name-link {
+    text-align: center;
+    display: flex;
+    border: white 1px solid;
+    width: 5rem;
+    padding: .25rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#name div p {
+    margin: 0;
+}
+
+.tilecontent {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+#name p {
+    line-height: 2rem;
+    margin-left: 2rem;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    #name {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #picture {
+        display: none;
+    }
+}
