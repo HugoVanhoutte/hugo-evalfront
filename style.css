@@ -128,12 +128,13 @@ body{
 
 #picture {
     width: 40rem;
-    height: 60rem;
+    height: 60rem
 }
 
 #picture img {
     width: 40rem;
     height: 60rem;
+    display: inline-block;
 }
 
 img[alt^="icone"] {
