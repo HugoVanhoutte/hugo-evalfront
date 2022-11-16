@@ -78,13 +78,18 @@ html {
     background-color: #f15a49;
 }
 /* Fin attribution couleurs au tiles*/
-
-body {
+body{
+    display: flex;
+    justify-content: center;
+}
+#all {
     display: flex;
     width: 100%;
     color: white;
     font-family: sans-serif;
     align-items: flex-start;
+    max-width: 1000px;
+    flex-direction: row;
 }
 
 #container {
