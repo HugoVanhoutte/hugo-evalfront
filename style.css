@@ -209,7 +209,15 @@ h1{
 
 @media screen and (max-width: 400px) {
     #picture {
-        display: none;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #picture img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 }
